@@ -1,0 +1,10 @@
+.movie-item p {
+    display: inline-block;
+}
+
+.movie-item {
+    padding: 15px 20px;
+    text-align: left;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}

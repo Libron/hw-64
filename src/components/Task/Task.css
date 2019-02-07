@@ -1,0 +1,35 @@
+.App h4 {
+    margin: 0;
+}
+.task {
+    background: #fff;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px 65px 20px 20px;
+    box-shadow: 3px 2px 9px 0 rgba(255, 255, 220, 0.55);
+    position: relative;
+}
+.buttons {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.btn-remove {
+    width: 20px;
+    height: 20px;
+    background: url("remove.png") 0 0 no-repeat;
+    background-size: cover;
+    border: none;
+    outline: none;
+    margin: 0 5px;
+}
+
+.btn-edit {
+    width: 20px;
+    height: 20px;
+    background: url("edit.png") 0 0 no-repeat;
+    background-size: cover;
+    border: none;
+    outline: none;
+    margin: 0 5px;
+}

@@ -1,0 +1,21 @@
+.form {
+    padding: 20px 0;
+}
+
+.form label {
+    margin-right: 5px;
+    font-weight: bold;
+    color: #4db6ac;
+}
+
+.form input {
+    padding: 5px 10px;
+    border-color: #4db6ac;
+}
+
+.form .btn-add {
+    padding: 7px 20px;
+    border: none;
+    background: #4db6ac;
+    color: #fff;
+}

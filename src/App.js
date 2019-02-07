@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header/Header";
+import {Route, Switch} from "react-router";
+import TodoPage from "./containers/TodoPage/TodoPage";
+import {Container} from "reactstrap";
+import MoviesPage from "./containers/MoviesPage/MoviesPage";
+import EditMoviePage from "./containers/MoviesPage/EditMoviePage";
+import EditTodoPage from "./containers/TodoPage/EditTodoPage";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header />
+          <Container>
+              <Switch>
+                  <Route path="/" exact render={() => (<h1>Hello wrold</h1>)} />
+                  <Route path="/todo/:id/edit" exact component={EditTodoPage} />
+                  <Route path="/todo"  exact component={TodoPage} />
+                  <Route path="/movies/:id/edit" exact component={EditMoviePage} />
+                  <Route path="/movies" exact component={MoviesPage} />
+                  <Route render={() => (<h1>Not Found</h1>)} />
+              </Switch>
+          </Container>
       </div>
     );
   }

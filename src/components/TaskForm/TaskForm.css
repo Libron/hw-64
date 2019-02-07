@@ -1,0 +1,19 @@
+.TaskForm {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+
+}
+.TaskForm input {
+    width: 91%;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+.btn-add {
+    padding: 23px 16px;
+    font-style: italic;
+    background: #e0e0e0;
+    color: black;
+    border: none;
+    margin-left: 15px;
+}
