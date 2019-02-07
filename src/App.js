@@ -15,7 +15,7 @@ class App extends Component {
         <Header />
           <Container>
               <Switch>
-                  <Route path="/" exact render={() => (<h1>Hello wrold</h1>)} />
+                  <Route path="/" exact render={() => (<h1>Welcome to my App</h1>)} />
                   <Route path="/todo/:id/edit" exact component={EditTodoPage} />
                   <Route path="/todo"  exact component={TodoPage} />
                   <Route path="/movies/:id/edit" exact component={EditMoviePage} />
