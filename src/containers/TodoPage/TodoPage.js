@@ -4,6 +4,7 @@ import './TodoPage.css';
 import Form from "../../components/Form/Form";
 import axios from "../../axios-instance";
 import Task from "../../components/Task/Task";
+import Spinner from "../../components/Spinner/Spinner";
 
 class TodoPage extends Component {
     state = {
@@ -54,7 +55,7 @@ class TodoPage extends Component {
 
     render() {
         if (!this.state.todos) {
-            return <h1>Loading...</h1>;
+            return <Spinner />;
         }
 
         const todos = Object.keys(this.state.todos).map(todoID => {

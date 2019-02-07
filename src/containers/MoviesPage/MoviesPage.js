@@ -5,6 +5,7 @@ import axios from "../../axios-instance";
 import Movie from "../../components/Movie/Movie";
 
 import './MoviesPage.css';
+import Spinner from "../../components/Spinner/Spinner";
 
 class MoviesPage extends Component {
     state = {
@@ -55,7 +56,7 @@ class MoviesPage extends Component {
 
     render() {
         if (!this.state.movies) {
-            return <h1>Loading...</h1>;
+            return <Spinner />
         }
 
         const movies = Object.keys(this.state.movies).map(movieID => {

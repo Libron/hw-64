@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import Form from "../../components/Form/Form";
 import axios from '../../axios-instance';
+import Spinner from "../../components/Spinner/Spinner";
 
 class EditMoviePage extends Component {
     state = {
@@ -22,7 +23,7 @@ class EditMoviePage extends Component {
 
     render() {
         if (!this.state.movie) {
-            return <h1>Fetching Movie data...</h1>
+            return <Spinner />
         }
 
         return (

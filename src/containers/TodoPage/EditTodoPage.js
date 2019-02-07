@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import Form from "../../components/Form/Form";
 import axios from "../../axios-instance";
+import Spinner from "../../components/Spinner/Spinner";
 
 class EditTodoPage extends Component {
     state = {
@@ -22,7 +23,7 @@ class EditTodoPage extends Component {
 
     render() {
         if (!this.state.todo) {
-            return <h1>Fetching TodoList Data...</h1>
+            return <Spinner />
         }
 
         return (
